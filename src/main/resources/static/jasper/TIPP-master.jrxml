@@ -1,0 +1,1101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2016-11-12T11:07:38 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="TIPP-master" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="782" leftMargin="30" rightMargin="30" topMargin="30" bottomMargin="30" uuid="46543dc2-9fd7-43ce-aaa9-7b0406d6e577">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="rgba(120, 215, 250, 0.21568628)">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="tableSensorial" whenResourceMissingType="Empty" uuid="eef5c45a-f160-4ece-a927-5755f2647788">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="dominancia" class="java.lang.String"/>
+		<field name="especifica" class="java.lang.String"/>
+		<field name="porcentaje" class="java.lang.Integer"/>
+		<field name="descripcion" class="java.lang.String"/>
+	</subDataset>
+	<subDataset name="dominancias" uuid="e9061a9c-2eae-41f7-87bd-15403e1d05d4">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="dominancia" class="java.lang.String"/>
+		<field name="especifica" class="java.lang.String"/>
+		<field name="porcentaje" class="java.lang.Integer"/>
+		<field name="descripcion" class="java.lang.String"/>
+	</subDataset>
+	<subDataset name="inteligencia" uuid="dce8c79c-f3e4-4125-ac37-712d417c3d35">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="dominancia" class="java.lang.String"/>
+		<field name="porcentaje" class="java.lang.Integer"/>
+		<field name="descripcion" class="java.lang.String"/>
+	</subDataset>
+	<subDataset name="personalidad" uuid="118574aa-9de1-4d6b-b364-03d98e37c281">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="dominancia" class="java.lang.String"/>
+		<field name="porcentaje" class="java.lang.Integer"/>
+		<field name="descripcion" class="java.lang.String"/>
+	</subDataset>
+	<subDataset name="contacto" uuid="31d9cbd8-70d4-4dc3-a90d-214671cc1a33">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="dominancia" class="java.lang.String"/>
+		<field name="porcentaje" class="java.lang.Integer"/>
+		<field name="descripcion" class="java.lang.String"/>
+	</subDataset>
+	<parameter name="logo" class="java.lang.String"/>
+	<parameter name="tipp" class="java.lang.String"/>
+	<parameter name="nombre" class="java.lang.String"/>
+	<parameter name="edad" class="java.lang.Integer"/>
+	<parameter name="cumpleanos" class="java.lang.String"/>
+	<parameter name="hoy" class="java.lang.String"/>
+	<parameter name="blue-line" class="java.lang.String"/>
+	<parameter name="respuesta1" class="java.lang.String"/>
+	<parameter name="respuesta2" class="java.lang.String"/>
+	<parameter name="respuesta3" class="java.lang.String"/>
+	<parameter name="respuesta4" class="java.lang.String"/>
+	<parameter name="footer" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="filtrosSensoriales" class="net.sf.jasperreports.engine.JRDataSource"/>
+	<field name="dominancias" class="net.sf.jasperreports.engine.JRDataSource"/>
+	<field name="inteligencias" class="net.sf.jasperreports.engine.JRDataSource"/>
+	<field name="personalidad" class="net.sf.jasperreports.engine.JRDataSource"/>
+	<field name="contacto" class="net.sf.jasperreports.engine.JRDataSource"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="360" splitType="Stretch">
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement x="130" y="50" width="550" height="109" uuid="d5e26d04-8f5d-42d6-985f-fcb85b809e79">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
+			<break>
+				<reportElement x="0" y="358" width="99" height="1" uuid="6f99bd82-812f-43ee-9234-9c31276108bd">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+			</break>
+			<image>
+				<reportElement x="100" y="309" width="621" height="43" uuid="2cfe66d0-5f58-4306-b896-1502c9b2b0bc">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{tipp}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="140" height="35" uuid="3b738e23-5cc3-48b9-9219-ed518ecf8e9e"/>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="403" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<staticText>
+				<reportElement x="0" y="6" width="190" height="18" uuid="108d10b2-3232-47e3-bb27-7619c63472a6"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14"/>
+					<paragraph firstLineIndent="14"/>
+				</textElement>
+				<text><![CDATA[NOMBRE DEL COACHEE:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="24" width="750" height="30" forecolor="#050000" backcolor="rgba(120, 215, 250, 0.21568628)" uuid="7acc14ed-a579-4103-b53f-86b70e313842"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12"/>
+					<paragraph firstLineIndent="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nombre}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="54" width="190" height="20" uuid="73d16c6c-24a1-4edf-b4cb-9baa2d7d8a28"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14"/>
+					<paragraph firstLineIndent="14"/>
+				</textElement>
+				<text><![CDATA[EDAD:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="74" width="750" height="30" forecolor="#050000" backcolor="rgba(120, 215, 250, 0.21568628)" uuid="39f1a6ee-2f88-488e-906f-7a416b6e9d12"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12"/>
+					<paragraph firstLineIndent="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{edad} + " años"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="104" width="190" height="20" uuid="32713d3a-e9d0-46a3-a219-53a854efb00d"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14"/>
+					<paragraph firstLineIndent="14"/>
+				</textElement>
+				<text><![CDATA[FECHA DE NACIMIENTO:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="126" width="750" height="30" forecolor="#050000" backcolor="rgba(120, 215, 250, 0.21568628)" uuid="c33305ac-e0f3-40a7-92b1-c32b1c7902bf"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12"/>
+					<paragraph firstLineIndent="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{cumpleanos}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="440" y="166" width="200" height="20" uuid="05d2237b-3e29-4e77-9194-23422bb966af"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Conceptos Diagnósticos:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="196" width="200" height="20" uuid="34fd7bdb-ea44-408b-b653-87c863ff2318"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[1.Filtros Sensoriales]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="216" width="200" height="20" uuid="cc82c4a5-1dfe-4ca3-a7ef-3b9402f46805"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[2.Procesos Cognitivos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="236" width="200" height="20" uuid="8d85dca1-0832-4c60-9a20-8f3677a2e1f2"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[3.Inteligencias]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="256" width="200" height="20" uuid="913c61fe-a03c-47e8-a763-b7b90a975648"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[4.Perfil de Contacto]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="276" width="200" height="20" uuid="37f52e32-6096-4109-b241-514c384371db"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[5.Personalidad]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="296" width="200" height="20" uuid="183721ed-61bd-4657-926d-0b899c506e7a"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[6.Fortalezas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="316" width="200" height="20" uuid="b07a9929-59ae-43f7-9845-e4b57e8b14d5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[7.Anexo 1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="336" width="200" height="20" uuid="2caebac2-e429-4b3d-8da5-cb5a776110f5"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[8.Anexo 2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="360" width="70" height="30" uuid="04ada701-3f75-4da6-9765-033f45688cab">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14"/>
+					<paragraph firstLineIndent="14"/>
+				</textElement>
+				<text><![CDATA[FECHA:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="70" y="360" width="680" height="30" forecolor="#050000" backcolor="rgba(120, 215, 250, 0.21568628)" uuid="12de1a8c-4989-4b7e-98af-46282b8ba52d"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12"/>
+					<paragraph firstLineIndent="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{hoy}]]></textFieldExpression>
+			</textField>
+			<break>
+				<reportElement positionType="Float" x="0" y="396" width="100" height="1" uuid="87bead6e-3200-4e7b-a786-ae0f953bcb36"/>
+			</break>
+		</band>
+		<band height="180">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<staticText>
+				<reportElement x="0" y="48" width="750" height="40" uuid="dbba0323-da22-45cf-a5fc-5b7177d0f505"/>
+				<text><![CDATA[PERFIL DE POTENCIAL ESTRATÉGICO ES LA LECTURA DE LA SERIE DE TALENTOS Y CUALIDADES PERSONALES QUE TE PERMITIRÁN TENER UNA NATURAL VENTAJA SOBRE LOS DEMAS Y LA ACEPTACIÓN DE QUE LOS DEMÁS TENDRÁS SEGÚN SU PERFIL, CIERTAS VENTAJAS SOBRE TI. CONFIRMANDO ASÍ, QUE LA TOLERANCIA ES LA CONVIVENCIA ARMÓNICA DE LAS DIFERENCIAS.]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="1" width="760" height="40" uuid="0699d828-90f7-4253-b6d2-1e320b115e94">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{blue-line}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="270" y="1" width="160" height="30" uuid="8ed48066-2f54-46bc-947b-00f81609a1e0">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[DIAGNOSTICO TIPP]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="0" y="100" width="750" height="60" uuid="00087d27-b30f-450b-8f11-1ee02bd077b9">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="Blank">
+					<datasetRun subDataset="tableSensorial" uuid="239da70f-b7a0-4281-a804-e3f788b9e2dc">
+						<dataSourceExpression><![CDATA[$F{filtrosSensoriales}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="100" uuid="6ea41c93-4f80-4169-9bdc-038e2c9779ff">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="100" height="30" uuid="1611398b-87f9-4a9e-b921-adc141f51f70"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[DOMINANCIA]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="100" height="30" uuid="642b9b5a-cff2-4c19-96df-fcec6cfe7157"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{dominancia}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100" uuid="f65cfe9b-f689-4367-b199-6f53e4e203b1">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="100" height="30" uuid="38fb5244-282c-4e34-8b35-bb93b9aa88fb"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[DOMINANCIA ESPECIFICA]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="100" height="30" uuid="96ff8337-8932-4c08-84de-909dc32ddb98"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{especifica}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="518c71db-bb89-4907-b2f0-50072fd4002d">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="0a1f39b5-ae22-4541-a8aa-2c1045cd0f2e"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[PORCENATAJE]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="90" height="30" uuid="cdf87c97-8644-45f4-b7c8-f840fb17fd2a"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{porcentaje}+" %"]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="460" uuid="9b7dd5ee-aada-4774-9674-ad3a37b7cfa4">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="460" height="30" uuid="29e1d649-2de9-4aa0-a569-efc4d8322e82"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[DESCRIPCIÓN]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="460" height="30" uuid="4de5dadd-d730-45c1-8353-8dacb2f289d0"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<font size="10"/>
+									<paragraph firstLineIndent="3" leftIndent="3" rightIndent="3"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{descripcion}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<staticText>
+				<reportElement x="470" y="1" width="230" height="30" uuid="5952742a-fbe6-43c8-9029-27fd45876cae">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FILTROS SENSORIALES]]></text>
+			</staticText>
+			<break>
+				<reportElement positionType="Float" x="0" y="167" width="100" height="1" uuid="9d0d50d0-7a3e-4302-a0ad-81e32c9f3308"/>
+			</break>
+		</band>
+		<band height="132">
+			<image>
+				<reportElement x="0" y="1" width="760" height="40" uuid="747434ff-9ed0-480d-87c6-20ad29456f5e">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{blue-line}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="270" y="1" width="160" height="30" uuid="9c7ff00c-48b0-4b57-ac0a-06748df5d213">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[DIAGNOSTICO TIPP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="470" y="1" width="230" height="30" uuid="43b5579f-3a01-43ad-9743-85b80472e558">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DOMINANCIAS COGNITIVAS]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="0" y="50" width="750" height="60" uuid="b0ba14d5-1df5-4199-b8fe-2d8a40a923f9">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="Blank">
+					<datasetRun subDataset="dominancias" uuid="47cd567e-0406-42c4-9d28-51163ca5bef8">
+						<dataSourceExpression><![CDATA[$F{dominancias}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="100" uuid="acebc78b-162e-47bd-b7e0-46f27a63d5bc">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="100" height="30" uuid="74bd672c-ae08-460a-9b00-a3d13f89653e"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[DOMINANCIA]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="100" height="30" uuid="8862dc3a-db52-4c92-b011-fae54e3c05a8"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{dominancia}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="100" uuid="038820ae-1453-4d2a-92d8-2c6c81e47e25">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="100" height="30" uuid="949e36cc-8fea-4e6b-bfd5-735476b35cfe"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[TIPO DE PENSAMIENTO]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="100" height="30" uuid="5f0205ea-d7b5-40da-a8b9-3710ba1c7b68"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{especifica}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="97711668-7edf-478a-8f5b-05f0416943ee">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="1477db3b-2871-4f6d-aa19-299fe165e873"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[PORCENATAJE]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="90" height="30" uuid="2c606937-2d70-49ac-bfd2-c91514dc8998"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{porcentaje}+" %"]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="460" uuid="a8c8469c-362a-4d21-8716-cc6685ccb2eb">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="460" height="30" uuid="caa61acb-04dd-48ba-957f-b832da23f594"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[DESCRIPCIÓN]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="460" height="30" uuid="c705fe87-2a77-46ad-b919-93ac96449b75"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<font size="10"/>
+									<paragraph firstLineIndent="3" leftIndent="3" rightIndent="3"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{descripcion}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<break>
+				<reportElement positionType="Float" x="0" y="122" width="100" height="1" uuid="ec4c3fc6-fcbb-4217-88ac-1dee40338d57"/>
+			</break>
+		</band>
+		<band height="132">
+			<image>
+				<reportElement x="0" y="0" width="760" height="40" uuid="2f7115b7-cc03-45d4-9e5c-e9bd97972635"/>
+				<imageExpression><![CDATA[$P{blue-line}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="270" y="0" width="160" height="30" uuid="47d3d5b8-1866-4d35-ad3b-b1d4c0e25355"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[DIAGNOSTICO TIPP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="0" width="320" height="30" uuid="964e80a8-782a-459b-8c7c-bb246f5344d7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[INTELIGENCIAS DOMINANTE]]></text>
+			</staticText>
+			<componentElement>
+				<reportElement x="0" y="50" width="750" height="60" uuid="a50c6fa3-35d7-42cb-8856-435eacf095f1">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="Blank">
+					<datasetRun subDataset="inteligencia" uuid="08c5204c-deec-4fc4-958f-a7f3ee2ec347">
+						<dataSourceExpression><![CDATA[$F{inteligencias}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="140" uuid="24853a8c-ecd8-4628-9fba-b5fbff91c22f">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="140" height="30" uuid="3cfb13b3-a573-41c8-8a86-ec29bfaa21bf"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[DOMINANCIA]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="140" height="30" uuid="1fc97ea7-a5e1-4537-afa1-8d28595f2b19"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{dominancia}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="4c7791d1-365f-4041-9ce5-fb2ece0ef66d">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="5561acb6-78ef-4d64-84d3-7825d1eea55d"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[PORCENATAJE]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="90" height="30" uuid="1282fc80-7c3a-4e91-ac59-c4a7cf3334e5"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{porcentaje}+" %"]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="520" uuid="924c735f-a397-492a-a919-a797d3865c77">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="520" height="30" uuid="ad2f082b-12b9-48be-8962-fa01bfc30bfe"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[DESCRIPCIÓN]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="520" height="30" uuid="ad132612-2328-4957-af2e-89204f924eac"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<font size="10"/>
+									<paragraph firstLineIndent="3" leftIndent="3" rightIndent="3"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{descripcion}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<break>
+				<reportElement positionType="Float" x="0" y="124" width="100" height="1" uuid="afb86441-bdf8-4b8c-9b90-a26a0bfb9cdc"/>
+			</break>
+		</band>
+		<band height="130">
+			<componentElement>
+				<reportElement x="0" y="50" width="750" height="60" uuid="7a7ca687-a07d-4278-8d82-1e8748513e43">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="Blank">
+					<datasetRun subDataset="personalidad" uuid="503ca1ec-1603-4255-bb93-fe8a7a05ce70">
+						<dataSourceExpression><![CDATA[$F{personalidad}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="140" uuid="5b88983d-15ed-4159-a837-e715574b3fcc">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="140" height="30" uuid="b1ccd007-5a82-473c-824b-af982baf2502"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[DOMINANCIA]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="140" height="30" uuid="8500b3fe-1bd4-4258-ab12-01c9f1785667"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{dominancia}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="02151afd-f908-4b82-929e-152cb4fa5128">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="e11f378a-2952-481d-9afa-02b31faf19e5"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[PORCENATAJE]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="90" height="30" uuid="ecd1780c-8d58-45cd-8082-95c52a5980f3"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{porcentaje}+" %"]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="520" uuid="7f9e163e-7b93-464f-b616-a429a413266f">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="520" height="30" uuid="5c0cc74e-ac4d-4a0a-beff-179226486d53"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[DESCRIPCIÓN]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="520" height="30" uuid="984a92eb-ea3f-4344-8512-452b08206aaf"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<font size="10"/>
+									<paragraph firstLineIndent="3" leftIndent="3" rightIndent="3"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{descripcion}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<image>
+				<reportElement x="0" y="0" width="760" height="40" uuid="ce437d04-1957-40ee-949d-231a73d447c3"/>
+				<imageExpression><![CDATA[$P{blue-line}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="270" y="0" width="160" height="30" uuid="48d95696-bdb2-4047-9901-c0760265a40a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[DIAGNOSTICO TIPP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="0" width="320" height="30" uuid="234ffa85-55e9-486b-b83f-9d56f1dfd3d7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PERFILES DE PERSONALIDAD]]></text>
+			</staticText>
+			<break>
+				<reportElement positionType="Float" x="0" y="119" width="100" height="1" uuid="839d4098-fb43-4fce-bca1-6e9e15f2c2eb"/>
+			</break>
+		</band>
+		<band height="128">
+			<componentElement>
+				<reportElement x="0" y="50" width="750" height="60" uuid="5dd53d85-8e50-479b-bbb0-abba735293cc">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="Blank">
+					<datasetRun subDataset="contacto" uuid="7f27a58d-a336-4399-8656-8394e95f38cf">
+						<dataSourceExpression><![CDATA[$F{contacto}]]></dataSourceExpression>
+					</datasetRun>
+					<jr:column width="140" uuid="3a039e29-72e1-493a-8759-deb4203009a0">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="140" height="30" uuid="761b7fc8-f821-4bcd-9fef-1ef6dcdd9852"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[DOMINANCIA]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="140" height="30" uuid="70d59af9-3f4c-45a0-86db-2588e5fddc21"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12" isBold="true"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{dominancia}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="90" uuid="f6e1d3e4-b724-430a-9521-976258789b15">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="90" height="30" uuid="25112930-75e6-4fb2-9305-e71d8ef69b87"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[PORCENATAJE]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement stretchType="RelativeToTallestObject" x="0" y="0" width="90" height="30" uuid="776a266c-f00d-49d5-b2c1-b71fe00521af"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{porcentaje}+" %"]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+					<jr:column width="520" uuid="e396af4b-0c4f-4c90-9093-a8536b25ef21">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+						<jr:columnHeader style="Table_CH" height="30" rowSpan="1">
+							<staticText>
+								<reportElement x="0" y="0" width="520" height="30" uuid="fc4e3743-086f-4552-9c4f-d6b9205981e7"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle">
+									<font size="12"/>
+								</textElement>
+								<text><![CDATA[DESCRIPCIÓN]]></text>
+							</staticText>
+						</jr:columnHeader>
+						<jr:detailCell style="Table_TD" height="30">
+							<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+								<reportElement x="0" y="0" width="520" height="30" uuid="4756f91d-7102-4696-8015-45d205285e58"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle">
+									<font size="10"/>
+									<paragraph firstLineIndent="3" leftIndent="3" rightIndent="3"/>
+								</textElement>
+								<textFieldExpression><![CDATA[$F{descripcion}]]></textFieldExpression>
+							</textField>
+						</jr:detailCell>
+					</jr:column>
+				</jr:table>
+			</componentElement>
+			<image>
+				<reportElement x="0" y="0" width="760" height="40" uuid="891b3aea-d962-4226-a182-5729c675640b"/>
+				<imageExpression><![CDATA[$P{blue-line}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="270" y="0" width="160" height="30" uuid="ea20f862-0321-4620-9fdf-55a6187b4133"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[DIAGNOSTICO TIPP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="0" width="320" height="30" uuid="7b0f0bab-fb0d-42b7-ba12-f4ae98c28163"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PERFILES DE CONTACTO]]></text>
+			</staticText>
+			<break>
+				<reportElement positionType="Float" x="0" y="118" width="100" height="1" uuid="4806277e-cb3c-4fa7-9c43-5c20322d624f"/>
+			</break>
+		</band>
+		<band height="255">
+			<image>
+				<reportElement x="0" y="0" width="760" height="40" uuid="7479a21e-2484-457a-b576-49509d2f2d36"/>
+				<imageExpression><![CDATA[$P{blue-line}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="270" y="0" width="160" height="30" uuid="fc9c3cff-3541-433c-b87b-d702d83821bb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[DIAGNOSTICO TIPP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="0" width="320" height="30" uuid="61afe204-cbdc-43b2-8ef3-01002476af3c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CONCLUSIONES Y ANÁLISIS]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="51" width="740" height="49" uuid="19849567-f84c-40e4-83fb-51fb7483cc6c"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font size="11"/>
+					<paragraph firstLineIndent="6" leftIndent="6" rightIndent="10" spacingBefore="22" spacingAfter="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{respuesta1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="30" y="51" width="180" height="20" uuid="8bee46fe-c7b1-4181-99d6-e515fdb16a4c"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[PERFIL DE CONTACTO]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="100" width="740" height="49" uuid="c8ddfb46-27bd-4a2b-adef-dc22c0a51d64"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font size="11"/>
+					<paragraph firstLineIndent="6" leftIndent="6" rightIndent="10" spacingBefore="22" spacingAfter="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{respuesta2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="30" y="100" width="180" height="20" uuid="0d297758-3082-412e-805d-9fa81e4fdcf0"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[PERSONALIDAD]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="149" width="740" height="49" uuid="394693ce-11af-45ef-9f7b-de49606f2520"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font size="11"/>
+					<paragraph firstLineIndent="6" leftIndent="6" rightIndent="10" spacingBefore="22" spacingAfter="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{respuesta3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="30" y="149" width="180" height="20" uuid="a2db0d63-2fb6-46a7-b46e-117e93c33f7f"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[FORTALEZAS]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="10" y="198" width="740" height="49" uuid="2be4eeb1-8e25-4296-aa05-981526772cb3"/>
+				<box>
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font size="11"/>
+					<paragraph firstLineIndent="6" leftIndent="6" rightIndent="10" spacingBefore="22" spacingAfter="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{respuesta4}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="30" y="198" width="180" height="20" uuid="3dc634b1-cca3-4fb8-95af-9eb9c6ec2564"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ANÁLISIS GLOBAL]]></text>
+			</staticText>
+			<break>
+				<reportElement positionType="Float" x="0" y="252" width="100" height="1" uuid="425addda-da07-478a-8850-77e622cacf76"/>
+			</break>
+		</band>
+		<band height="435">
+			<image>
+				<reportElement x="0" y="0" width="760" height="40" uuid="e5cb3e17-4eaf-4eba-ae22-70a706c5215c"/>
+				<imageExpression><![CDATA[$P{blue-line}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="270" y="0" width="160" height="30" uuid="92a9a752-eb84-4b53-b096-fbc41e1c6937"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[DIAGNOSTICO TIPP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="0" width="320" height="30" uuid="b3cfd8c2-ee9d-43e7-a657-f9d6a74dcde3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GLOSARIO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="380" height="395" uuid="b3007bc1-e060-4fce-8309-9039cc96c09b"/>
+				<textElement markup="none">
+					<font isBold="false"/>
+					<paragraph lineSpacing="Single" leftIndent="5" spacingBefore="2"/>
+				</textElement>
+				<text><![CDATA[GLOSARIO
+
+FLITROS SENSORIALES: LA FORMA NATURAL DE ABSORBER LA INFORMA-
+CIÓN.
+
+DOMINANCIA COGNITIVA: LA TENDENCIA DE PENSAMIENTO CON LA QUE
+PROCESAMOS LA INFORMACIÓN, QUE ADEMÁS, ESTÁ INTIMAMENTE
+RELACIONADA CON NUESTRA PERSONALIDAD.
+
+INTELIGENCIA DOMINANTE: LA FORMA ÚNICA DE EXPRESAR LOS CONTE-
+NIDOS MENTALES AUNQUE TENEMOS TODOS LOS TIPOS DE INTELIGEN-
+CIA, HAY ALGUNAS QUE SE EXPRESAN CON ESPECIAL FUERZA SEGÚN
+LAS HABILIDADES PERSONALES Y EL ENTORNO.
+
+PERFIL DE CONTACTO: ESTILO PERSONAL DE EXPRESIÓN DEL YO CON-
+CIENTE, ES DECIR, LA TENDENCIA NATURAL DE CONTACTAR AL MUNDO
+EXTERIOR, INCLUSO AÚN SIN PALABRAS. NO ES UN PERFIL DE PERSONA-
+LIDAD CUANTO UNA PREFERENCIA DE COMUNICACIÓN, EL “PERFIL DE
+CONTACTO” PUEDE CAMBIAR CON EL TIEMPO SEGÚN EL CONTEXTO
+SOCIAL, CULTURAL, AMBIENTAL, LABORAL Y LAS EXPERIENCIAS VIVIDAS.
+(SOLO MAYORES DE 19 AÑOS).
+
+INTELIGENCIA INTERPERSONAL: ES LA HABILIDAD DE COMPRENDER A
+LOS OTROS Y DE RELACIONARSE EFICAZMENTE CON ELLOS.
+
+INTELIGENCIA INTRAPERSONAL: COMPRENDE LA NATURAL PERCEPCIÓN
+RESPECTO DE SÍ MISMO, INCLUYE ATRIBUTOS TALES COMO AUTODISCI-
+PLINA, AUTOCOMPRENSIÓN Y AUTOESTIMA, DIRECTAMENTE RELACIO-
+NADA CON LA ÉTICA Y LA CAPACIDAD DE EMPATÍA.
+
+INTUICIÓN: ES EL CONOCIMIENTO SINTÉTICO AL QUE ANTECEDEN LA
+RAZÓN, CREENCIAS Y EL CONOCIMIENTO, ES EL INDICIO DE UNA
+PROFUNDA UNIFICACIÓN.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="380" y="40" width="380" height="395" uuid="be0f9c94-473d-452f-a478-9c7a13938569"/>
+				<textElement markup="none">
+					<font size="10"/>
+					<paragraph lineSpacing="Single" leftIndent="4" spacingBefore="2"/>
+				</textElement>
+				<text><![CDATA[TIPOS DE PENSAMIENTO / PROCESO COGNITIVO
+
+PENSAMIENTO: ES LA CAPACIDAD DE ORDENAR, DAR SENTIDO E INTER-
+PRETAR LOS CONTENIDOS DEL CEREBRO.
+
+PENSAMIENTO ASOCIATIVO: ES LA CAPACIDAD DE ACTUAR POR SIMULTA-
+NEIDAD, PROXIMIDAD, CONTIGUIDAD O POR ASOCIACIÓN EMOTIVA O
+SIMBÓLICA.
+
+PENSAMIENTO HOLÍSTICO O GLOBAL: ESTÁ DIRECTAMENTE RELACIONA-
+DO CON EL ANÁLISIS DE LA INFORMACIÓN DESDE UN PUNTO DE VISTA
+CONJUNTO Y ES LO QUE COMUNMENTE SE LLAMA SENTIDO COMÚN.
+
+PENSAMIENTO DIVERGENTE: ESTE TIPO DE PENSAMIENTO EXPLORA
+ALTERNATIVAS DIFERENTES FRENTE A UN PROBLEMA.
+
+PENSAMIENTO CONVERGENTE: AQUEL TIPO DE PENSAMIENTO QUE
+ESTABLECE LAS COINCIDENCIAS, SIMILITUDES Y RELACIONES PARA
+OBTENER UNA RESPUESTA.
+
+PENSAMIENTO CONCEPTUAL: TIPO DE PENSAMIENTO QUE BUSCA LOS
+PORQUÉS DE AQUELLO QUE NOS INTERESA, ORIENTANDO A ATERRIZAR
+O CONCRETAR LOS CONCEPTOS.
+
+PENSAMIENTO ABSTRACTO: TIPO DE PENSAMIENTO QUE IMPLICA
+PENSAR NO EN LAS COSAS POR SÍ MISMAS, SINO EN SUS RELACIONES
+GRACIAS A ESTE TIPO DE PENSAMIENTO, SE FORMULAN HIPÓTESIS Y
+TEORÍAS.
+
+PENSAMIENTO LITERAL: SE CARACTERIZA POR LA HABILIDAD DE SER
+OBJETIVO Y BASARSE EXCLUSIVAMENTE EN LAS OBSERVACIONES QUIE-
+NES LO POSEEN, MUESTRAN UNA FALTA DE COMPRESIÓN A LOS ENTRE-
+LINEADOS, DOBLES SENTIDOS E IRONÍAS.]]></text>
+			</staticText>
+		</band>
+		<band height="435">
+			<image>
+				<reportElement x="0" y="0" width="760" height="40" uuid="ce1c2c99-43e1-408b-9bfa-60c967718a9f"/>
+				<imageExpression><![CDATA[$P{blue-line}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="270" y="0" width="160" height="30" uuid="dc1be81b-0f46-4335-ac69-5a436b663eeb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[DIAGNOSTICO TIPP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="0" width="320" height="30" uuid="e6caeac7-f904-4b79-8e16-b1ad889d180e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GLOSARIO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="40" width="380" height="395" uuid="942fb3ba-57e0-4bfb-9263-eb035abcaeb9"/>
+				<textElement markup="none">
+					<paragraph lineSpacing="Single" leftIndent="4" spacingBefore="2"/>
+				</textElement>
+				<text><![CDATA[PENSAMIENTO LÓGICO: SE CARACTERIZA POR ELABORAR CONCEPTOS</br>
+Y UTILIZAR LOS MODOS LÓGICOS DEL RAZONAMIENTO, EJEMPLO DE
+ESTE ES LA DEDUCCIÓN.
+
+PENSAMIENTO SISTEMÁTICO: ES LA ACTITUD DEL SER HUMANO QUE SE
+BASA EN LA PERCEPCIÓN DEL MUNDO REAL EN TÉRMINOS DE TOTALIDA-
+DES PARA SU ANÁLISIS, SU COMPRENSIÓN Y ACCIONAR.
+
+PERSONA SISTEMÁTICA: PERSONA METÓDICA Y QUE PROCEDE ORGANI-
+ZADAMENTE EN SU VIDA, OPINIONES, HÁBITOS, ETC.
+
+TEMPERAMENTO: ES NUESTRO LEGADO BIOLÓGICO, REPRESENTA LA
+INFLUENCIA DE LA NATURALEZA FÍSICA CODIFICADA, POR LO QUE NO ES
+POSIBLE CAMBIAR, INCLUYE EL SUSTRATO NEUROLÓGICO, ENDOCRINO-
+LÓGICO Y BIOQUÍMICO DESDE EL CUAL EMPEZARÁ A FORMARSE LA
+PERSONALIDAD.
+
+CARÁCTER: SON LAS CARACTERÍSTICAS ADQUIRIDAS DURANTE EL
+CRECIMIENTO, SUPONE CIERTAS HABILIDADES SOCIALES Y AUTOACEP-
+TACIÓN.
+
+PERSONALIDAD: ES LA SUMA DEL TEMPERAMENTO Y EL CARÁCTER
+EXPRESADA COMO UN PATRÓN DE CONDUCTAS REPETIDAS.
+]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="64" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+			<image>
+				<reportElement x="0" y="0" width="760" height="64" uuid="dc8080e6-926e-4e17-91a9-bea0bb242007">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{footer}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="640" y="20" width="96" height="20" uuid="f60f02e7-de1c-481b-8f5b-8ae3843b9c28"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Pagína: "+$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

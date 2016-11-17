@@ -1,0 +1,1183 @@
+survey:
+    sectionSensitives:
+        - title: Filtro sensorial visual
+          shorName: VISUAL
+          specificName: VISUAL IMPRESA
+          questions:
+              - question: ¿Tomas notas cuando estás estudiando, trabajando o aprendiendo algo?
+                
+              - question: ¿Necesitas de material impreso cuando estudias?
+                
+              - question: ¿Aprendes mejor creando mapas mentales?
+                
+              - question: ¿Llevas la vista al frente cuando estás pensando algo?
+                
+              - question: ¿Te gusta hacer presentaciones en power point?
+                
+        - title: Filtro sensorial visual espacial
+          shorName: VISUAL
+          specificName: VISUAL ESPECIAL
+          questions:
+              - question: ¿Disfrutas de las artes gráficas?
+                
+              - question: ¿Eres un diseñador natural?
+                
+              - question: ¿Normalmente ves el panorama global, es decir te centras poco en los detalles?
+                
+              - question: ¿Te resulta fácil entender la proporción de los espacios y diseños?
+                
+              - question: ¿Eres capaz de girar fácilmente imágenes en tu cabeza?
+                
+        - title: Filtro sensorial auditivo personal/ voz interior
+          shorName: AUDITIVA
+          specificName: AUDITIVO PERSONAL
+          questions:
+              - question: ¿Disfrutas  la música y el canto?
+                
+              - question: ¿Tu voz es armoniosa?
+                
+              - question: ¿Te molesta que te interrumpan cuando estás concentrado en algún trabajo?
+                
+              - question: ¿Eres capaz de sostener una conversación en tu cabeza?
+                
+              - question: ¿Cuando estás aprendiendo necesitas silencio?
+                
+        - title: Filtro sensorial auditivo social
+          shorName: AUDITIVA
+          specificName: AUDITIVO SOCIAL
+          questions:
+              - question: ¿Eres un buen conversador?
+                
+              - question: ¿Te consideras una persona muy sociable?
+                
+              - question: ¿Te gusta escuchar música mientras aprendes?
+                
+              - question: ¿Eres una persona sensible al sonido?
+                
+              - question: ¿Te encantan los chistes?
+                
+        - title: Filtro sensorial kinestésico
+          shorName: TÁCTIL
+          specificName: SENSITIVO
+          questions:
+              - question: ¿Eres hábil para los deportes o la danza o el teatro?
+                
+              - question: ¿Cuándo estas en algún espacio interior te sientes inquieto  y buscas salir?
+                
+              - question: ¿Eres muy inquieto?
+                
+              - question: ¿Necesitas siempre estar haciendo algo, se te dificulta estar quieto?
+                
+              - question: ¿Disfrutas el hecho de tomar riesgos?
+                
+        - title: Filtro sensorial sensitivo
+          shorName: TÁCTIL
+          specificName: KINESTÉSICO
+          questions:
+              - question: ¿Te gustan los trabajos manuales,  hacer modelos con las manos?
+                
+              - question: ¿Eres quisquilloso en cuanto a las texturas textiles?
+                
+              - question: ¿Eres mucho más práctico que teórico?
+                
+              - question: ¿Eres hábil y te gusta reparar cosas?
+                
+              - question: ¿Eres un buen cocinero?
+                
+        - title: Filtro sensorial intuitivo abierto
+          shorName: INTUITIVO
+          specificName: INTUITIVO ABIERTO
+          questions:
+              - question: ¿Eres una persona introspectiva /reflexiva? (observo, analizo, concluyo y actúo en consecuencia)
+                
+              - question: ¿Puedes ser sensible a críticas?
+                
+              - question: ¿Para ti son muy importantes los asuntos de confianza en una relación?
+                
+              - question: ¿Te consideras una persona con una gran intuición?
+                
+              - question: ¿Un ambiente armonioso es un requisito para sentirte bien?
+                
+        - title: Filtro sensorial intuitivo estructurado
+          shorName: INTUITIVO
+          specificName: INTUITIVO ESTRUCTURADO
+          questions:
+              - question: ¿Consideras ser una persona introspectiva/reflexiva? (observo, analizo, concluyo y actúo en consecuencia)
+                
+              - question: ¿Sueles reaccionar impulsivamente si algo te molesta? (explosivo)
+                
+              - question: ¿Eres tan independiente que puedes incluso llegar a ser solitario?
+                
+              - question: ¿Eres una persona absorta en matemáticas y en temas científicos?
+                
+              - question: ¿Te cuestionas frecuentemente tus pensamientos y acciones?
+                
+    sectionCognitive:
+        - title: Dominancia de proceso cognitivo teórico global (abstract random)
+          shorName: TEÓRICO GLOBAL SOCIALIZADOR
+          specificName: HOLISTICO GLOBAL ASOCIATIVO
+          justWord: true
+          questions:
+              - question: ¿Cuando trabajas en equipo te distingues por ser un buen elemento?
+                
+              - question: ¿Te resulta relativamente fácil comprender las relaciones interpersonales?
+                
+              - question: ¿Consideras que puedes ser o eres un buen comunicador?
+                
+              - question: ¿Te gusta estar acompañado la mayoría del tiempo?
+                
+              - question: ¿Tienes mucha imaginación?
+                
+              - question: ¿Puedes reconocer las necesidades emocionales de otras personas?
+                
+              - question: ¿Eres un pensador más global, es decir, ves primero el todo que el detalle?
+                
+              - wordQuestion: Servicial
+                flagWordQuestion: true
+              - wordQuestion: Imaginativo
+                flagWordQuestion: true
+              - wordQuestion: Adaptable
+                flagWordQuestion: true
+              - wordQuestion: Relaciones
+                flagWordQuestion: true
+              - wordQuestion: Flexible
+                flagWordQuestion: true
+              - wordQuestion: Público
+                flagWordQuestion: true
+              - wordQuestion: Asociado
+                flagWordQuestion: true
+              - wordQuestion: Espontáneo
+                flagWordQuestion: true
+              - wordQuestion: Comunicativo
+                flagWordQuestion: true
+              - wordQuestion: Compartido
+                flagWordQuestion: true
+              - wordQuestion: Cooperativo
+                flagWordQuestion: true
+              - wordQuestion: Sensible
+                flagWordQuestion: true
+        - title: Dominancia de proceso cognitivo realista global (concrete random)
+          shorName: REALISTA GLOBAL INNOVADOR
+          specificName: DIVERGENTE / CONCEPTUAL
+          justWord: true
+          questions:
+              - question: ¿Te gusta hacer experimentos, investigar de que están hechas las cosas, porqué suceden?
+                
+              - question: ¿Eres intuitivo?
+                
+              - question: ¿Te gusta innovar y crear  en temas de tu interés?
+                
+              - question: ¿Tiendes fácilmente a dar solución a los problemas?
+                
+              - question: ¿Eres una persona muy observadora?
+                
+              - question: ¿Eres un crítico natural?
+                
+              - wordQuestion: Inventor/innovador
+                flagWordQuestion: true
+              - wordQuestion: Independiente
+                flagWordQuestion: true
+              - wordQuestion: Adaptable
+                flagWordQuestion: true
+              - wordQuestion: Competitivo
+                flagWordQuestion: true
+              - wordQuestion: Toma riesgos
+                flagWordQuestion: true
+              - wordQuestion: Ve posibilidades
+                flagWordQuestion: true
+              - wordQuestion: Experimentador
+                flagWordQuestion: true
+              - wordQuestion: Descubridor
+                flagWordQuestion: true
+              - wordQuestion: Gusta de retos
+                flagWordQuestion: true
+        - title: Dominancia de proceso cognitivo observador teórico (abstract sequential)
+          shorName: OBSERVADOR TEÓRICO SOLUCIONADOR DE PROBLEMAS
+          specificName: CONCEPTUAL / ABSTRACTO, CONVERGENTE
+          justWord: true
+          questions:
+              - question: ¿Tu tipo de pensamiento es muy lógico, haces deducciones fácilmente?
+                
+              - question: ¿Eres capaz de separar tus emociones en asuntos o decisiones prácticas? (objetivo)
+                
+              - question: ¿Revisas teorías y tiendes a analizar con minuciosidad algún tema de tu interés?
+                
+              - question: ¿Eres propositivo, tienes siempre alguna solución por simple que sea para un problema?
+                
+              - question: ¿Desafías las estructuras o las cuestionas al menos?
+                
+              - question: ¿Te gusta tomar riesgos?
+                
+              - wordQuestion: Sistemático
+                flagWordQuestion: true
+              - wordQuestion: Sensato
+                flagWordQuestion: true
+              - wordQuestion: Lógico
+                flagWordQuestion: true
+              - wordQuestion: Evalúa
+                flagWordQuestion: true
+              - wordQuestion: Ideas de mejora
+                flagWordQuestion: true
+              - wordQuestion: Investigación
+                flagWordQuestion: true
+              - wordQuestion: Analítico
+                flagWordQuestion: true
+              - wordQuestion: Crítico
+                flagWordQuestion: true
+              - wordQuestion: Debate
+                flagWordQuestion: true
+              - wordQuestion: Académico/lector
+                flagWordQuestion: true
+              - wordQuestion: Razonable
+                flagWordQuestion: true
+        - title: Perfil de proceso cognitivo  realista observador (concrete sequential)
+          shorName: OBSERVADOR REALISTA ORGANIZADOR
+          specificName: LITERAL / LOGICO / MATEMATICO
+          justWord: true
+          questions:
+              - question: ¿Normalmente te interesa más el resultado y menos  los medios para lograrlo?
+                
+              - question: ¿Te reconoces como un pensador sistemático u ordenado?
+                
+              - question: ¿Admites que tienes excelente memoria para los detalles?
+                
+              - question: ¿Atiendes y ejecutas casi siempre tus pendientes agendados?
+                
+              - question: ¿Eres hábil para coordinar, organizar y ejecutar?
+                
+              - question: ¿Te gusta saber lo que se espera de ti y apegarte a un plan preestablecido?
+                
+              - wordQuestion: Realista
+                flagWordQuestion: true
+              - wordQuestion: Organizado
+                flagWordQuestion: true
+              - wordQuestion: \"al grano\"/directo
+                flagWordQuestion: true
+              - wordQuestion: Práctico/activo
+                flagWordQuestion: true
+              - wordQuestion: Preciso/concreta
+                flagWordQuestion: true
+              - wordQuestion: Planeador
+                flagWordQuestion: true
+              - wordQuestion: Memoriza
+                flagWordQuestion: true
+              - wordQuestion: Obedece instrucción
+                flagWordQuestion: true
+              - wordQuestion: Cauto/desconfiado
+                flagWordQuestion: true
+              - wordQuestion: Trabajo duro
+                flagWordQuestion: true
+              - wordQuestion: Perfeccionista
+                flagWordQuestion: true
+    sectionIntelligence:
+        - title: Inteligencia viso-espacial (hemisferio derecho)
+          shorName: VISUAL ESPACIAL
+          questions:
+              - question: ¿Se te facilita leer mapas?
+                
+              - question: ¿Te gusta jugar ajedrez, lego,  mecano o construir rompecabezas?
+                
+              - question: ¿Normalmente tienes un buen ojo para los diseños, dibujos y detalles?
+                
+              - question: ¿Consideras tener un buen sentido de la proporción de los espacios?
+                
+              - question: ¿Prefieres los videos y diapositivas más que el material impreso?
+                
+              - question: ¿Disfrutas las artes visuales?
+                
+              - question: ¿Normalmente recuerdas con facilidad lugares, escenas, caras o detalles?
+                
+        - title: Inteligencia visual (lóbulo oxipital, hemisferio izq. Y lóbulo frontal)
+          shorName: VISUAL
+          questions:
+              - question: ¿Para aprender mejor  de un texto elaboras mapas mentales o diagramas?
+                
+              - question: ¿Usas los colores para diferenciar palabras o información?
+                
+              - question: ¿Te gusta leer?
+                
+              - question: ¿Memorizas mejor si ves la información en una presentación?
+                
+              - question: ¿Cuándo evocas una imagen cargada de emociones, vuelves a sentir casi con la misma intensidad?
+                
+        - title: Inteligencia lógica / matemática (hemisferio izquierdo)
+          shorName: LÓGICO / MATEMÁTICA
+          questions:
+              - question: ¿Disfrutas trabajar con números?
+                
+              - question: ¿Te resulta fácil reconocer patrones y estructuras?
+                
+              - question: ¿Eres de las personas que disfrutas experimentar y probar?
+                
+              - question: ¿Te interesas mucho en conocer el funcionamiento de las cosas?
+                
+              - question: ¿Disfrutas mucho resolver problemas matemáticos?
+                
+              - question: ¿Tu forma de pensar es lógica y sistemática? (paso por paso)
+                
+        - title: Inteligencia musical (hemisferio derecho)
+          shorName: MUSICAL
+          questions:
+              - question: ¿Tienes la habilidad de cantar y tocar algún instrumento musical?
+                
+              - question: ¿Eres capaz de recordar las melodías y los sonidos fácilmente?
+                
+              - question: ¿Consideras tener un buen sentido del ritmo?
+                
+              - question: ¿Eres una persona que responde con mucha fuerza emocional a la música?
+                
+              - question: ¿Puedes identificar fácilmente en una canción o en la música alguna nota discordante?
+                
+              - question: ¿En una pieza musical logras distinguir el ritmo, el tono y el timbre?
+                
+              - question: ¿Eres una persona muy sensible a los sonidos ambientales?
+                
+              - question: ¿Disfrutas mucho cuando escuchas música?
+                
+              - question: ¿Para tí es mucho más fácil aprender cuando hay música?
+                
+              - question: ¿Normalmente tienes una voz agradable y bien modulada?
+                
+        - title: Inteligencia verbal /lingüística (hemisferio izq. Corteza cerebral, área de brocca)
+          shorName: VERBAL / LINGUÍSTICA
+          questions:
+              - question: ¿Disfrutas y te resulta fácil aprender nuevas palabras o idiomas?
+                
+              - question: ¿Disfrutas la lectura y frecuentemente visitas librerías?
+                
+              - question: ¿Eres un buen conversador?
+                
+              - question: ¿Tu memoria es muy buena para nombres y lugares?
+                
+              - question: ¿Tienes un muy buen vocabulario y puedes pronunciar y deletrear con precisión?
+                
+              - question: ¿Te resulta fácil dar instrucciones verbales?
+                
+              - question: ¿Puedes expresarte fácilmente cuando tienes que dar explicaciones?
+                
+        - title: Inteligencia corporal / kinestésica (corteza motora)
+          shorName: CORPORAL / KINESTÉSICA
+          questions:
+              - question: ¿Disfrutas mucho el deporte  o la danza o el teatro?
+                
+              - question: ¿Te consideras una persona inquieta, tiendes a moverte mucho?
+                
+              - question: ¿Tienes la capacidad de expresar y hablar con tu cuerpo?
+                
+              - question: ¿Te gusta armar y desarmar cosas?
+                
+              - question: ¿Te gusta arreglar cosas?
+                
+              - question: ¿Eres muy activo?
+                
+              - question: ¿Te gusta usar tus manos para transformar materiales o elementos?
+                
+        - title: Inteligencia intrapersonal (lóbulo frontal)
+          shorName: INTRAPERSONAL
+          questions:
+              - question: ¿Estudias mejor  solo que en grupo?
+                
+              - question: ¿Te gusta tener un lugar especial para estudiar?
+                
+              - question: ¿Te cuestionas tus pensamientos, ideas y acciones?
+                
+              - question: ¿Te sientes cómodo estando solo contigo mismo?
+                
+              - question: ¿Eres capaz de aprender de tus errores y éxitos?
+                
+              - question: ¿Eres capaz de equilibrar la razón y la emoción cuando tomas decisiones?
+                
+              - question: ¿Eres consistente en la planeación y el trabajo en favor del cumplimiento de tus metas?
+                
+        - title: Inteligencia interpersonal (lóbulo frontal)
+          shorName: INTERPERSONAL
+          questions:
+              - question: ¿Disfrutas siendo parte de un equipo?
+                
+              - question: ¿Cuando tienes que tomar una decisión normalmente buscas la opinión de otras personas?
+                
+              - question: ¿Te encanta la actividad social?
+                
+              - question: ¿Consideras ser una persona que busca el consenso y la armonía en las relaciones?
+                
+              - question: ¿Disfrutas el hecho de conocer gente nueva?
+                
+        - title: Inteligencia naturalista
+          shorName: NATURISTA
+          questions:
+              - question: ¿Eres una persona altamente responsable hacia el ambiente natural?
+                
+              - question: ¿Disfrutas cualquier deporte al aire libre? (ciclismo, alpinismo, campismo)
+                
+              - question: ¿Consideras ser un apasionado en temas ambientales?
+                
+              - question: ¿Aprendes mejor mediante actividades prácticas en exteriores?
+                
+    sectionContac:
+        - title: Perfil de contacto bajo
+          shorName: CONTACTO BAJO
+          questions:
+              - question: ¿Eres introvertido, es decir, enfocas la energía a través de la reflexión y la introspección?
+                
+              - question: ¿Puedes llegar a ser muy académico, es decir en algún tema que te guste profundizas en el estudio?
+                
+              - question: ¿Te consideras un trabajador/estudiante independiente?
+                
+              - question: ¿El estrés que hay en el ambiente logra afectarte mucho?
+                
+              - question: ¿Eres normalmente reactivo ante cualquier estímulo, te cuesta ofrecer respuestas deliberadas?
+                
+              - question: ¿Prefieres tener tiempo suficiente para relacionar, comprender y procesar la información?
+                
+              - question: ¿En general te consideras una persona muy organizada, además ordenada?
+                
+              - question: ¿Tiendes sin darte cuenta o conscientemente a subestimar tus fortalezas?
+                
+        - title: Perfil de contacto alto
+          shorName: CONTACTO ALTO
+          questions:
+              - question: ¿Consideras ser una persona orientada hacia el exterior, concentras externamente tus energías?
+                
+              - question: ¿Aprendes y trabajas mejor cuando puedes compartir, discutir y procesar inf.  Con otras personas?
+                
+              - question: ¿Eres de las personas que puede hacer varias cosas al  mismo tiempo, multi tasker?
+                
+              - question: ¿Puedes pensar que una de tus características es ser participativo?
+                
+              - question: ¿Cuando tienes que expresar una idea, das una visión general o panorámica obviando detalles?
+                
+              - question: ¿Consideras tener un amplio círculo de amistades?
+                
+              - question: ¿Piensas que uno de tus atributos personales es ser un conversador natural?
+                
+    sectionsProfile:
+        - title: LÍMBICO (aspectos emocionales, cómodos, estéticos y funcionales de la experiencia)
+          details1: RD= EMOCIONES
+          details2: sentimiento, extrov/introv, sensación
+          shorName: LÍMBICO
+          questions:
+              - question: Hago poco ejercicio y mi metabolismo puede ser lento
+                
+              - question: Soy optimista y positivo, pero también poco determinado.
+                
+              - question: Me cuesta trabajo decidir.
+                
+              - question: Aprecio las ideas de otras personas, pero  a veces menosprecio mis propias ideas.
+                
+              - question: Puedo convivir con el desorden sin preocuparme mucho.
+              - 
+              - question: Me encanta dormir.
+                
+              - question: Tiendo a ser friolento.
+                
+              - question: Me gusta estar acompañado, siento que me energetiza la presencia de otras personas.
+                
+              - question: Puedo ser incondicional con mis compañeros o amigos.
+                
+              - question: Me comunico bien con los animales, la naturaleza y  los niños.
+                
+              - question: Puedo ser muy generoso.
+                
+              - question: Me gusta ser amable con la gente.
+                
+              - question: Busco la armonía en los ambientes.
+                
+              - question: Considero ser una persona cálida.
+                
+              - question: El lugar donde vivo es acogedor y me gusta estar en casa.
+                
+              - question: Me gusta dar y recibir masajes.
+                
+              - question: Me siento mejor con ropa holgada.
+                
+              - question: El ejercicio no me gusta mucho.
+                
+              - question: Me cuesta adaptarme  a los cambios.
+                
+              - question: Puedo estar por un largo periodo de tiempo en una misma posición, no necesito moverme.
+                
+              - question: Me gusta el arte.
+                
+              - question: El trabajo social me motiva y soy paciente enseñando a niños.
+        
+        
+        
+        - title: MELANCÓLICO (aspectos negativos, detallados, profundos y prácticos de la experiencia)
+          details1: RD= SILENCIO
+          details2: introversión, sensación, intuición  
+          shorName: MELANCÓLICO
+          questions:
+              - question: Considero ser una persona muy práctica.			
+                 
+              - question: Puedo parecer frío o inexpresivo.			
+                
+              - question: Soy muy persistente.			
+                
+              - question: Puedo ser obsesivo.
+                
+              - question: Cuando quiero a alguien, me apego con fuerza.						
+                
+              - question: Tiendo a ser perfeccionista			
+                
+              - question: Cuando me comprometo difícilmente renuncio.			
+                
+              - question: Me gusta mi soledad y la disfruto.			
+                
+              - question: Soy de pocas palabras, prefiero observar más y hablar menos.			
+                
+              - question: No soy tímido, solo callado.
+                
+              - question: Me gusta mi independencia.	
+                
+              - question: No me gusta quedarme mucho tiempo en fiestas o eventos sociales.	
+                
+              - question: En general, soy introvertido.	
+                
+              - question: Puedo pasar desapercibido, pero no me gusta que me ignoren.
+                
+              - question: Puedo parecer distante, pero mis emociones son profundas.
+                
+              - question: Soy bueno para escuchar y puedo ser paciente.
+                
+              - question: En general, no necesito de la aprobación de los demás.			
+                
+              - question: La gente dice que a veces soy negativo.			
+                
+              - question: Tengo un agudo sentido crítico.	
+                
+              - question: Dicen que me quejo mucho.
+                
+              - question: Creo que soy realista pero la gente opina que soy pesimista.	
+                
+              - question: Me gustan los lugares tranquilos.
+                
+              - question: Selecciono bien a las personas con las que quiero convivir.
+                
+              - question: Considero que soy una persona genuina.
+                
+              - question: Normalmente soy bastante sincero.
+                
+              - question: La gente confía en mi porque soy muy discreto.
+                
+              - question: Cuando creo en una causa, soy totalmente fiel a ella.
+                
+              - question: Tengo pocos amigos pero muy buenos.
+                
+              - question: Puedo ser muy posesivo.	
+                
+              - question: Tiendo a acumular, no soy tan desprendido.
+                
+              - question: Soy generalmente desconfiado.
+                
+              - question: Soy un administrador muy estricto y bueno con números.	
+                
+              - question: Me gusta mucho la música, procuro escucharla tanto como puedo.
+                
+        
+        - title: VOLUBLE (aspectos externos, sensibles, limitados y rápidos de la experiencia)
+          details1: RD= SENSIBILIDAD
+          details2: juicios de valor, negativo, extroversión
+          shorName: VOLUBLE
+          questions:
+              - question: Soy bastante inquieto.	
+                
+              - question: Soy muy rápido de pensamiento y de movimiento.	
+                
+              - question: Mi pensamiento cambia con rapidez, soy ágil y ocurrente.
+                
+              - question: Dicen que soy muy inteligente.
+                
+              - question: Puedo pensar más rápido de lo que puedo hablar.	
+                
+              - question: Doy muchas vueltas cuando hablo.
+                
+              - question: Me guste o no, creo que puedo ser intrigante.
+                
+              - question: Sé muy bien como manipular.
+                
+              - question: Con facilidad hablo de otras personas cuando están ausentes.
+                
+              - question: Cuando discuto defiendo mis argumentos incansablemente y creo tener siempre la razón.			
+                
+              - question: Puedo emprender negocios fácilmente si me disciplino.			
+                
+              - question: Puedo ser buen estratega. 			
+                
+              - question: Soy ocurrente e ingenioso con la palabra.
+                
+              - question: Tengo  facilidad de convencer a otras personas.	
+                
+              - question: Puedo ser inconsistente en algún proyecto porque me disperso fácilmente y no doy continuidad.
+                
+              - question: Soy muy diplomático.
+                
+              - question: Soy un buen comediante/imitador, puedo exagerar.
+                
+              - question: Creo que soy un vendedor nato.	
+                
+              - question: Me gusta hablar de la vida de otros.	
+                
+              - question: En las reuniones suelo ser el centro de la atención.
+                
+              - question: Me doy cuenta que siempre estoy compitiendo, hago lo que sea por ganar y puedo sentir envidia fácilmente.			
+                
+              - question: Cuando pierdo o me siento acorralado, tiendo a victimizarme, me justifico porque no acepto equivocaciones.			
+                
+              - question: Soy muy suceptible a la crítica, tiendo a repartir culpas.
+                
+              - question: Considero ser un excelente anfitrión.	
+                
+              - question: Tengo un buen sentido del humor.
+                
+              - question: Hago algunas cosas para buscar la aprobación de la gente.
+                
+              - question: En general soy desconfiado.
+                
+              - question: Cuando tengo que defenderme puedo mentir para no perder.
+                
+              - question: Me cuesta creer en las acciones desinteresadas de los demás.	
+                
+              - question: Me incomoda que me ignoren.	
+                
+              - question: Reconozco que puedo ser caprichoso.
+                
+              - question: Soy tan suspicaz que pienso que hablan de mi, me defiendo antes de que me ataquen.
+                
+              - question: Me encantan las ofertas.
+                
+              - question: Es importante para mi conocer las reglas para romperlas.
+                
+        
+        - title: INTELECTUAL (aspectos intelectuales, racionales, fundamentales y profundos de la experiencia)			
+          details1: RD= RACIONALIDAD
+          details2: Racional, lógico, pensamiento, objetivo
+          shorName: INTELECTUAL
+          questions:
+              - question: Puedo leer y hacer trabajo intelectual por varia horas.			
+                
+              - question: Me gusta reunir datos que me lleven al fundamento de un tema.
+                
+              - question: Creo que soy hiperresponsable.	
+                
+              - question: Puedo separar las emociones en favor de la objetividad.	
+                
+              - question: Tiendo a ser bastante analítico.
+                
+              - question: Me distingo por ser una persona racional.
+                
+              - question: Mi pensamiento funciona de manera muy lógica.	
+                
+              - question: Soy muy didáctico cuando se trata de explicar.	
+                
+              - question: Considero ser una persona moderada en términos generales, no soy de extremos.
+                
+              - question: En términos de justicia, puedo ser totalmente imparcial.
+                
+              - question: Me gustan mucho los libros.	
+                
+              - question: En general busco claridad y síntesis o simplicidad en mi vida.	
+                
+              - question: Me gustan las estadísticas.	
+                
+              - question: Puedo parecer y ser soberbio y arrogante.
+                
+              - question: Sé que clasifico a las personas y a las cosas y tiendo por tanto a establecer jerarquías.			
+                
+              - question: Puede sucederme que planeo tanto que no concreto.			
+                
+              - question: Las prisas y las presiones me tensan, las evito, me gusta tomar mi tiempo para cada cosa.			
+                
+              - question: Puedo ser muy ordenado, tanto, que tiendo a ser perfeccionista.			
+                
+              - question: Caigo fácilmente en rutinas, puedo ser monótono y predecible.	
+                
+              - question: Tiendo ser solemne.	
+                
+              - question: Sin duda soy amante del conocimiento y gusto de buenas lecturas.
+                
+              - question: Me cuesta trabajo permitirme cometer errores.	
+                
+              - question: Tengo un muy buen sentido de la justicia.
+                
+              - question: Soy muy paternalista.	
+                
+              - question: Admito ser muy académico, me gusta todo lo que se refiere al ambiente y el sentido de estudiar.			
+                
+              - question: Busco constantemente la investigación científica.
+                
+              - question: En general soy un buen planificador.	
+                
+              - question: Generalmente tiendo a ser líder.	
+                
+              - question: Considero ser una persona extrovertida y pública, me gusta hablar ante una audiencia.			
+                
+              - question: Soy un consejero nato. Tiendo a creer saber lo que es conveniente para alguien.			
+                
+              - question: Me encanta la libertad, la independencia.
+                
+              - question: Soy una persona activa, pero generalmente no me muevo con nerviosismo.	
+                
+              - question: Si alguien fundamenta bien sus argumentos, le concedo la razón.
+                
+              - question: Pienso dos veces antes de hacer cualquier cosa que considero importante.
+                
+              - question: Tiendo a ser autoexigente.
+                
+              - question: Si algo me gusta mucho,  lo repito y lo adopto.	
+                
+        
+        
+        - title: ACTIVO (aspectos prácticos, activos, eficaces y rentables de la experiencia)
+          details1: RD= IRRITABILIDAD
+          details2: impulsividad,	proactividad, acción, movimiento  
+          shorName: ACTIVO
+          questions:
+              - question: Siempre tengo mucha energía, puedo ser hiperactivo.
+                
+              - question: Generalmente duemo pocas horas.
+                
+              - question: Si no me impongo un límite, puedo seguir sin parar.
+                
+              - question: Suelo exagerar  las emociones y las conversaciones.			
+                
+              - question: En realidad me gusta hacer las cosas a lo grande.
+                
+              - question: Soy una persona competitiva.
+                
+              - question: Me doy cuenta de que mi forma de hablar y mis ademanes son algo bruscos.
+                
+              - question: Tiendo a cometer actos de excesiva expresión de energía. Me cuesta graduarla.
+                
+              - question: La gente dice que mi forma de hablar es en tono de orden.
+                
+              - question: Cuando tengo algún proyecto lo ejecuto hasta terminarlo, lo considero urgente, no lo postergo.			
+                
+              - question: Tiendo a ser el lider.
+                
+              - question: Siempre busco algo que hacer en el plano práctico.
+                
+              - question: Para que yo crea algo me lo tienen que demostrar, tiendo a ser muy escéptico.	
+                
+              - question: Me cuesta mucho delegar porque me impaciento.
+                
+              - question: No me tomo mucho tiempo para planear, me impaciento.
+                
+              - question: Puedo ser  buen estratega.
+                
+              - question: Admito que prefiero que me obedezcan, a caerles bien o a que me  quieran.
+                
+              - question: Me gusta mucho el ambiente empresarial, la política y los deportes.
+                
+              - question: Tiendo a ser irritable, me enojo fácilmente.
+                
+              - question: Puedo ser agresivo si no me controlo y muy dominante.
+                
+              - question: Me doy cuenta que tiendo a conductas autodestructivas cuando no puedo canalizar positivamente mi energía.
+                
+              - question: Soy una persona leal y generalmente noble.
+                
+              - question: Dada mi intensa energía, soy bastante apasionado en todo lo que hago.
+                
+              - question: Sé perdonar a quien me ha lastimado.
+                
+              - question: Me doy cuenta que soy controvertido, o me aman o me odian.			
+                
+              - question: Me gustan los retos, me trazo un objetivo y lo cumplo para iniciar otro.			
+                
+              - question: Soy adicto a la adrenalina, me gustan las emociones fuertes.			
+                
+              - question: Me encanta ser y sentirme libre, por eso suelo ser rebelde y tiendo a desafiar la autoridad.			
+                
+              - question: Prefiero estar en espacios abiertos, me impaciento cuando estoy encerrado.			
+                
+              - question: Reconozco que trato de controlar la vida de quienes me rodean.			
+                
+              - question: Una vez que me he alterado mucho, me rebasa la adrenalina y es muy difícil detenerme.			
+                
+              - question: Más que negociar, me gusta ir directo a la acción, tiendo a ser impulsivo.			
+                
+              - question: No me gustan las sutilezas.
+                
+              - question: Rechaso los límites, tiendo a desafiarlos, por eso es fácil que caiga en una adicción.			
+                
+              - question: Me gusta que me hablen con la verdad por fuerte que sea y también así lo hago.			
+                
+              - question: Comprendo que soy una persona muy celosa.
+        
+        
+        
+        - title: LÍMBICO ABUNDANTE (aspectos profundos, artísticos, integradores y curativos de la exp.)
+          details1: RD= EXPANCIÓN
+          details2: sentimiento, intuición, extroversión 
+          shorName: LÍMBICO ABUNDANTE
+          questions:
+              - question: Realmente no me gusta hacer ejercicio.		
+                
+              - question: La gente opina que soy excéntrico y creo que es cierto.	
+                
+              - question: Creo que soy muy popular.	
+                
+              - question: Soy muy entuciasta en lo que hago y  propongo.			
+                
+              - question: Me gusta ser maternal.			
+                
+              - question: Hago muchas cosas aunque admito que pocas veces las concreto.	
+                
+              - question: Soy muy buen chef y un mejor gurmet.	
+                
+              - question: Tengo una buena voz y me gusta hablar y/o cantar.
+                
+              - question: Soy bueno para diagnosticar y para medicar a los demás.
+                
+              - question: Me gusta la diplomacia y soy muy bueno con las relaciones públicas.	
+                
+              - question: Aprendo fácilmente nuevos idiomas.
+                
+              - question: Soy vandidoso y me gusta ser el centro de la atención.	
+                
+              - question: A veces me siento inseguro.
+                
+              - question: Puedo ser una persona muy compasiva.	
+                
+              - question: Tengo muchos amigos y los cultivo.	
+                
+              - question: Me gusta coleccionar cosas.
+                
+              - question: Me gusta vestirme con varios colores y accesorios.	
+                
+              - question: Si no me controlo, puedo ser despilfarrador.  Soy generoso.
+                
+              - question: Soy una persona entregada y me duele el dolor de otros.	
+                
+              - question: Me gusta recibir gente en mi casa, aún personas de diferente clase social.
+                
+              - question: Me gusta sentirme aceptado y querido por las personas.	
+                
+              - question: Sufro con el rechazo y tiendo a responder con indiferencia aunque si necesitan de mi ayuda, acudo.			
+                
+              - question: Soy muy optimista, no pierdo la fe.			
+                
+              - question: Me gusta mostrarme feliz aunque esté pasando por un mal momento.			
+                
+              - question: Trato de conciliar en situaciones hostiles.			
+                
+              - question: Muchas veces el sentimiento me gana y lo expreso fácilmente.			
+                
+              - question: Puedo ser manipulador.  Sé como hacer que la gente responda como necesito que lo haga.			
+                
+              - question: Me gusta la abundancia en todo. 			
+                
+              - question: Si mis palabras pueden lastimar a alguien, trato de maquillar la verdad, me cuesta ser asertivo.			
+                
+              - question: Soy capaz de hacer cosas para que me quieran, me acepten y me reconozcan.			
+                
+              - question: Me gusta cantar y silvar mientras hago cosas.			
+                
+              - question: Cuando estoy triste, me reconcilio a través del placer de comer. 			
+                
+        
+        
+        
+        - title: CARISMÁTICO  (aspecto social, optimista, positivo y superficial de la experiencia)
+          details1: RD= BRILLO
+          details2: extroversión, intuición, social, sensación
+          shorName: CARISMÁTICO
+          questions:
+              - question: Tengo la capacidad de procesar gran cantidad de energía.
+                
+              - question: Mi metabolismo es muy rápido y eficiente.
+                
+              - question: Sé que no es fácil seguirme el ritmo.	
+                
+              - question: Me doy cuenta que mi influencia tiende a suavisar a la gente, especialmente a los más arrebatados.			
+                
+              - question: Creo que soy una persona magnética.
+                
+              - question: La gente opina que soy muy tierno.
+                
+              - question: Soy una persona muy intensa.	
+                
+              - question: Reconozco tener una extraordinaria energía sexual.	
+                
+              - question: En mis relaciones tiendo a ser volatil.	
+                
+              - question: Mi personalidad es ligera y eléctrica.	
+                
+              - question: En general soy una persona veloz.
+                
+              - question: Cuando hablo hago muchos gestos con mi cara.
+                
+              - question: Camino con cierto ritmo un tanto coqueto.	
+                
+              - question: Me gusta mucho la actuación y puedo ser  histriónico (exagerar ademanes)
+                
+              - question: Considero tener naturaleza de líder.		
+                
+              - question: Respeto las ideas y creencias, no manipulo.
+                
+              - question: La gente opina que soy carismático.
+                
+              - question: Soy muy creativo.
+                
+              - question: Me califico como una persona idealista.	
+                
+              - question: Normalmente transmito y contagio el buen humor.	
+                
+              - question: Puede suceder que pierda de vista el lado negativo de las personas y las cosas.			
+                
+              - question: Siempre trato de estimular los aspectos positivos de las personas, además de su lado activo.			
+                
+              - question: Puedo llegar a ser muy ingenuo e irracionalmente optimista.			
+                
+              - question: Ha llegado a suceder que me olvide de comprarme ropa y de la hora de la comida.			
+                
+              - question: Considero ser una persona visionaria, puedo medir el éxito de algo antes de que suceda.			
+                
+              - question: Puedo perder el piso fácilmente.
+                
+              - question: Soy entregado y también servicial. 
+                
+              - question: Aunque soy muy amigable, paradójicamente tengo pocos amigos.
+                
+              - question: Me gusta vivir la vida con intensidad.	
+                
+              - question: A veces tanto entuciasmo y alegría han llegado a afectarme mucho por caer en excesos.			
+                
+              - question: Los excesos en los que puedo caer, pueden ser desde sexuales hasta el extremo del misticismo.			
+                
+                        
+    sectionsStrengths:
+        - justWord: false
+          questions:
+              - wordQuestion: PPPRUD
+                flagWordQuestion: true
+              - wordQuestion: PPPOS
+                flagWordQuestion: true
+              - wordQuestion: PPFLEX
+                flagWordQuestion: true
+              - wordQuestion: PPRESP
+                flagWordQuestion: true
+              - wordQuestion: PPANA
+                flagWordQuestion: true
+              - wordQuestion: PPAR
+                flagWordQuestion: true
+              - wordQuestion: PPAUC
+                flagWordQuestion: true
+              - wordQuestion: PPCA
+                flagWordQuestion: true
+              - wordQuestion: PPCOMP
+                flagWordQuestion: true
+              - wordQuestion: PPEMP
+                flagWordQuestion: true
+              - wordQuestion: PPMAN
+                flagWordQuestion: true
+              - wordQuestion: PPCONEX
+                flagWordQuestion: true
+              - wordQuestion: PPCONT
+                flagWordQuestion: true
+              - wordQuestion: PPCRE
+                flagWordQuestion: true
+              - wordQuestion: PPDES
+                flagWordQuestion: true
+              - wordQuestion: PPDISC
+                flagWordQuestion: true
+              - wordQuestion: PPEMPR
+                flagWordQuestion: true
+              - wordQuestion: PPENF
+                flagWordQuestion: true
+              - wordQuestion: PPEQ
+                flagWordQuestion: true
+              - wordQuestion: PPESTU
+                flagWordQuestion: true
+              - wordQuestion: PPINTEL
+                flagWordQuestion: true
+              - wordQuestion: PPINCL
+                flagWordQuestion: true
+              - wordQuestion: PPINDIV
+                flagWordQuestion: true
+              - wordQuestion: PPINI
+                flagWordQuestion: true
+              - wordQuestion: PPACUM (INQ)
+                flagWordQuestion: true
+              - wordQuestion: PPID
+                flagWordQuestion: true
+              - wordQuestion: PPREST
+                flagWordQuestion: true
+              - wordQuestion: PPSIGN
+                flagWordQuestion: true
+              - wordQuestion: PPESTR
+                flagWordQuestion: true
+              - wordQuestion: PPFUT
+                flagWordQuestion: true
+              - wordQuestion: PPEXC
+                flagWordQuestion: true
+              - wordQuestion: PPORG
+                flagWordQuestion: true
+              - wordQuestion: PPCOMU
+                flagWordQuestion: true
+              - wordQuestion: PPREL
+                flagWordQuestion: true
+    sectionsTraits:
+        - title: RASGOS DE SANA AUTOESTIMA
+          justWord: false
+          questions:
+              - question: Amabilidad
+                
+              - question: Generosidad
+                
+              - question: Cooperación social
+                
+              - question: Espíritu de ayuda mutua
+                
+              - question: Se siente digno de ser querido
+                
+              - question: Demuestra amor a los demás
+                
+              - question: Las relaciones amorosas fluyen con naturalidad
+                
+              - question: Propicia actividades y hechos que fomentan la propia felicidad
+                
+              - question: Se siente merecedor de la felicidad
+                
+              - question: Reconoce logros de los demás, sabe que eso no empobrece su capacidad
+                
+              - question: Resiliencia (capacidad de recuperarse fácilmente de las adversidades)
+                
+              - question: No se siente superior a los demás
+                
+              - question: Se siente cómodo ante personas con un elevado nivel de autoestima
+                
+              - question: No necesita probar lo que es
+                
+              - question: Normalmente tiene claridad en los objetivos
+                
+              - question: Se siente confiado y apto para la vida
+                
+              - question: Siente placer de vivir
+                
+              - question: Expresión espontánea de afecto
+                
+              - question: Apertura para crítica y reconocer errores
+                
+              - question: Manejo menos ansioso e inseguro frente a adversidades
+                
+              - question: Capacidad de concervar el equilibrio y la dignidad en situaciones de estrés
+                
+              - question: Tiene ideas y creencias propias a pesar de las tradiciones.
+                
+              - question: Valora los productos de su mente
+                
+              - question: No sufre la obstrucción del miedo y la duda permanente
+                
+              - question: La felicidad humana, el bienestar y el progreso son sus objetivos
+                
+        - title: RASGOS DE BAJA AUTOESTIMA
+          justWord: false
+          questions:
+              - question: Sentimientos constantes de infelicidad
+                
+              - question: Temor
+                
+              - question: No se siente merecedor del amor y la felicidad
+                
+              - question: Relaciones dependientes/parasitarias
+                
+              - question: Sabotea su felicidad
+                
+              - question: Es objeto de su devoción quien lo rechaza
+                
+              - question: No reconoce los logros de los demás porque no reconoce los suyos
+                
+              - question: Demuestra su poder dominando sexualmente (miedo a las mujeres y a la vida)
+                
+              - question: Reacciona contrariamente a su bienestar
+                
+              - question: Sensación crónica de elegir mal a su pareja
+                
+              - question: Matrimonio lleno de frustraciones
+                
+              - question: Mala elección de carrera
+                
+              - question: Sueños que nunca se cumplen
+                
+              - question: Ansiedad y depresión crónicas
+                
+              - question: Baja resistencia a las enfermedades
+                
+              - question: Notable dependencia a las drogas
+                
+              - question: Hambre insaciable de amor
+                
+              - question: Necesidad de aprobación
+                
+              - question: Deseo de vivir dolor más que de experimentar alegría
+                
+              - question: Aspectos negativos más importantes que los positivos
+                
+              - question: Arrogancia, fanfarronería y jactancia
+                
+              - question: Tiene ideas y creencias propias a pesar de las tradiciones.
+                
+              - question: Sienten envidia y ofensa con la gente que triunfa
+                
+              - question: No alcanza objetivos porque no se los plantea
+                
+              - question: Se siente equivocado como persona (no en ideas)
+                
+              - question: No confía en sus propias ideas (las abandona)
+                
+              - question: Admitir error es como condena y se percibe como humillación
+                
+              - question: Se protege bajo una fortaleza de hostilidad (desconfía de sus propios límites, dice si cuando es no)
+                
+        - title: ASERTIVIDAD
+          justWord: false
+          questions:
+              - question: Mantengo mi dignidad y soy tratado con respeto
+                
+              - question: Decido mis propios valores y estilo de vida
+                
+              - question: Mi actitud es tranquila
+                
+              - question: Soy independiente
+                
+              - question: Pido reciprocidad
+                
+              - question: Puedo cambiar de parecer
+                
+              - question: Lucho por lo que quiero y lo obtengo
+                
+              - question: Tengo, experimento y respeto mis propias ideas, sentimientos y opiniones
+                
+              - question: Puedo calmarme, tomar mi tiempo y pensar antes de actuar
+                
+              - question: Me siento agusto conmigo mismo
+                
+              - question: Sé decir \"no se\" o \"no entiendo\"
+                
+              - question: Estar solo cuando así lo escojas
+                
+              - question: Pedir lo que quieres
+                
+              - question: Puedo cometer errores y responsabilizarme de ellos
+                
+              - question: Siento la libertad de cambiar de opinión
+                
+              - question: Tengo el derecho a ser escuchado y tomado en serio.
+                
+              - question: Derecho a tener necesidades y que sean tan importantes como las de los demás
+                
+              - question: Me siento libre de pedir información
+                
+              - question: Puedo rechazar peticiones sin tener que sentirte culpable
+                
+              - question: Establezco mis prioridades y tomo mis decisiones
+                
+              - question: Tengo derechos y los defiendo
+                
+              - question: Puedo decirir cumplir o no las expectativas de los demás sin sentirme mal
+                
+              - question: Sé que no tengo que dar razones ni excusas para justificar mis acciones
+                
+              - question: No me siento responsable de solucionar los problemas de otros
+                
